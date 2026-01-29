@@ -90,8 +90,8 @@ export function ProjectThumbnails() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.5rem;
+          height: 2.5rem;
           border-radius: 9999px;
           background: white;
           color: black;
@@ -99,10 +99,24 @@ export function ProjectThumbnails() {
           transform: rotate(-30deg);
         }
 
+        @media (min-width: 768px) {
+          .arrow-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+          }
+        }
+
         .arrow-svg {
-          width: 2.5rem;
-          height: 2.5rem;
+          width: 1.75rem;
+          height: 1.75rem;
           transition: transform 0.5s cubic-bezier(0.33, 0, 0.2, 1);
+        }
+
+        @media (min-width: 768px) {
+          .arrow-svg {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
         }
 
         .project-card {
