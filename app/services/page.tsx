@@ -22,8 +22,6 @@ export default function ServicesPage() {
       <WorkHeader
         title="Services"
           showFilters={false}
-          tagline="A design studio built on purpose and the belief that great brands start with great ideas."
-          location="Latitude: 23.4607° N Longitude: 91.1809° E"
       />
       <div className="relative z-10 bg-background">
         <ServicesDetailGrid />
