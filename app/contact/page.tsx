@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Get in touch with lOZ!NR to discuss your design and branding needs. Let's create something bold together.",
   openGraph: {
-    title: "Contact lOZ!NR",
+    title: "Contact LOZINR",
     description: "Reach out to discuss your design and branding project",
     url: "https://lozinr.com/contact",
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact lOZ!NR",
+        alt: "Contact LOZINR",
       },
     ],
   },
