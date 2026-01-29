@@ -142,11 +142,9 @@ export function Hero() {
               Brands,
             </motion.span>
             <motion.span className="hero-line" variants={lineVariants}>
-              built with
+              built with intention.
             </motion.span>
-            <motion.span className="hero-line" variants={lineVariants}>
-              intention.
-            </motion.span>
+            
           </h1>
         </motion.div>
       </div>
