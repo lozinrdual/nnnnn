@@ -34,8 +34,6 @@ export default function WorkClientPage() {
     <main className="relative min-h-screen bg-white transition-colors duration-300">
       <WorkHeader
         showFilters={false}
-        tagline="We create brands that lead, combining strategy, motion and craft to shape iconic identities."
-        location="Latitude: 23.4607° N  Longitude: 91.1809° E"
       />
       <div className="relative z-10 bg-white">
         <WorkFilters categories={industries} onFilterChange={setActiveFilter} activeFilter={activeFilter} />
