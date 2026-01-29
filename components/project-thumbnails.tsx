@@ -163,10 +163,10 @@ export function ProjectThumbnails() {
                 {/* Title Section */}
                 <div className={`${project.bgColor} ${project.textColor} p-2 sm:p-8 md:p-3 px-3 md:px-5 lg:px-8 w-full`}>
                   {/* Top Row: Year, Category, Services */}
-                  <div className="grid grid-cols-3 gap-4 mb-15 sm:mb-23 text-[12px] md:text-[14px] lg:text-[16px] font-medium tracking-tight uppercase">
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-15 sm:mb-23 text-[12px] md:text-[14px] lg:text-[16px] font-medium tracking-tight uppercase">
                     <div className="text-left">{project.year}</div>
                     <div className="hidden md:block text-center">{project.category}</div>
-                    <div className="text-right">{project.services}</div>
+                    <div className="text-right col-span-1">{project.services}</div>
                   </div>
 
                   {/* Bottom Row: Title and Arrow */}
