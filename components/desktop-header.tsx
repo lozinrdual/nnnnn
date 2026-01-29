@@ -131,7 +131,7 @@ export function DesktopHeader() {
         }
       `}</style>
       <div className="w-full md:px-0 lg:px-8 py-2.4">
-        <div className="flex items-start justify-between gap-4">
+        <div className="flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-4 flex-shrink-0">
             <div className="w-48 h-12">
               <DesktopHeaderSVG />
@@ -140,7 +140,7 @@ export function DesktopHeader() {
 
           <div className="text-[14px] font-medium text-black">Branding Studio</div>
 
-          <nav className="flex gap-40 items-center">
+          <nav className="flex gap-16 items-center">
             <div className="flex gap-4 leading-none">
               {navLinks.map((link) => (
                 <Link
