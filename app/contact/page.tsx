@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import ContactClient from "./contact-client"
 
 export const metadata: Metadata = {
-  title: "Contact lOZ!NR | Get Your Brand Designed",
+  title: "Contact LOZINR | Get Your Brand Designed",
   description:
     "Get in touch with lOZ!NR to discuss your design and branding needs. Let's create something bold together.",
   openGraph: {
