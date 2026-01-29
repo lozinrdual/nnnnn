@@ -140,8 +140,8 @@ export function DesktopHeader() {
 
           <div className="text-[14px] font-medium text-black">Branding Studio</div>
 
-          <nav className="flex gap-5">
-            <div className="flex flex-col gap-0.7 leading-none">
+          <nav className="flex gap-8 items-center">
+            <div className="flex gap-4 leading-none">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -152,21 +152,21 @@ export function DesktopHeader() {
                 </Link>
               ))}
             </div>
-          </nav>
 
-          <div className="flex flex-col gap-2 leading-none">
-            {socialLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="header-social-link text-[14px] font-medium text-black"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+            <div className="flex gap-4 leading-none">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="header-social-link text-[14px] font-medium text-black"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </nav>
 
           <Link
             href="/contact"
