@@ -151,7 +151,7 @@ export function ServicesDetailGrid() {
         {services.map((service, index) => (
           <div
             key={service.id}
-            className="sticky top-0 bg-background px-3 py-6 min-h-screen flex items-center"
+            className="sticky top-0 bg-background px-3 pt-1 min-h-screen flex items-center"
             style={{ zIndex: index }}
           >
             <ServiceCard service={service} />
