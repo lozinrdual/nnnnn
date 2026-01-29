@@ -31,6 +31,19 @@ const projects: Project[] = [
     bgColor: "bg-[#FF3C00]",
     textColor: "text-white",
   },
+  {
+    id: "1",
+    title: "Lozinr",
+    category: "Design Agency",
+    industry: "DESIGN",
+    image: "https://j918kna7hvf0qlsi.public.blob.vercel-storage.com/Frame%202.jpg",
+    slug: "lozinr",
+    tags: ["Agency", "Branding", "Creative"],
+    year: "2025",
+    services: "Brand Identity",
+    bgColor: "bg-[#FF3C00]",
+    textColor: "text-white",
+  },
   
 ]
 
