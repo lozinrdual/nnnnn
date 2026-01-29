@@ -140,7 +140,7 @@ export function DesktopHeader() {
 
           <div className="text-[14px] font-medium text-black">Branding Studio</div>
 
-          <nav className="flex gap-8 items-center">
+          <nav className="flex gap-16 items-center">
             <div className="flex gap-4 leading-none">
               {navLinks.map((link) => (
                 <Link
