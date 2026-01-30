@@ -31,7 +31,7 @@ export default function WorkClientPage() {
   }, [activeFilter])
 
   return (
-    <main className="relative min-h-screen bg-white transition-colors duration-300">
+    <main className="relative min-h-screen bg-background transition-colors duration-300">
       <WorkHeader
         showFilters={false}
       />
