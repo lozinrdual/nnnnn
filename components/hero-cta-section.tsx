@@ -1,12 +1,12 @@
 export function HeroCTASection() {
   return (
-    <div className="w-full bg-white py-5 sm:py-20 md:py-5 relative z-10">
+    <div className="w-full bg-foreground py-5 sm:py-20 md:py-5 relative z-10">
       <style>{`
         .cta-buttoon {
           position: relative;
           overflow: hidden;
           background: transparent;
-          color: black;
+          color: background;
           padding: 12px 3px;
           z-index: 1;
         }
@@ -18,7 +18,7 @@ export function HeroCTASection() {
           top: 0;
           bottom: 0;
           width: 0;
-          background: black;
+          background: background;
           transition: width 0.4s cubic-bezier(0.33, 0, 0.2, 1);
           z-index: -1;
         }
@@ -88,7 +88,7 @@ export function HeroCTASection() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12">
           {/* Left Section - Text Only */}
           <div>
-            <p className="text-[14px] sm:text-[16px] md:text-[18px] font-medium text-black leading-tight">
+            <p className="text-[14px] sm:text-[16px] md:text-[18px] font-medium text-background leading-tight">
               Clarity over creativity.
               <br />
               We help brands make confident decisions.
@@ -100,7 +100,7 @@ export function HeroCTASection() {
 
           {/* Right Section - Text + CTA */}
           <div className="flex flex-col justify-between gap-4 sm:gap-6 md:gap-4">
-            <p className="text-[14px] sm:text-[16px] md:text-[18px] font-medium text-black leading-tight">
+            <p className="text-[14px] sm:text-[16px] md:text-[18px] font-medium text-background leading-tight">
               Your brand has a story. We make sure it's seen,
               <br />
               felt and remembered. We design logos, build brands and create moments that turn attention into action.
