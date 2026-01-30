@@ -66,7 +66,7 @@ export function ThemeToggle() {
       ref={buttonRef}
       onClick={handleThemeToggle}
       disabled={isAnimating}
-      className="fixed bottom-5 right-5 z-50 group"
+      className="fixed bottom-5 right-5 z-999999 group"
       aria-label="Toggle theme"
     >
       {/* Main toggle circle */}
