@@ -307,7 +307,7 @@ export function ServiceCards() {
                 >
                   <path
     d="M4 12H6.5M20 12L14 6M20 12L14 18M20 12H9.5"
-    stroke="#1C274C"
+    stroke="foreground"
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
