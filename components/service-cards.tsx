@@ -240,7 +240,7 @@ export function ServiceCards() {
               animationDelay: `${index * 0.12}s`,
             }}
           >
-            <div className="service-card-inner h-full bg-black/1 border border-border/50 rounded-3xl p-8 md:p-9 flex flex-col hover:border-border/80 transition-all duration-300">
+            <div className="service-card-inner h-full bg-background/1 border border-border/50 rounded-3xl p-8 md:p-9 flex flex-col hover:border-border/80 transition-all duration-300">
               {/* Service Number */}
               
 
