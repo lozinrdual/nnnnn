@@ -57,11 +57,11 @@ export function WorkFilters({ categories, onFilterChange, activeFilter }: WorkFi
         <div className="relative">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`w-full px-4 py-4 rounded-lg border border-forground/20 bg-transparent hover:bg-black-5/7 text-black-5 flex items-center justify-between transition-all duration-500 overflow-hidden relative group ${
-              isOpen ? "ring-2 ring-black-5/20 border-black-5/40" : ""
+            className={`w-full px-4 py-4 rounded-lg border border-forground/20 bg-transparent hover:bg-forground/7 text-forground flex items-center justify-between transition-all duration-500 overflow-hidden relative group ${
+              isOpen ? "ring-2 ring-forground/20 border-forground/40" : ""
             }`}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-black-5/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-r from-forground/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <span className="font-semibold text-[13px] tracking-tight relative z-10 flex items-center gap-2">
              
               {/* Category Name: ektu boro size */}
@@ -70,7 +70,7 @@ export function WorkFilters({ categories, onFilterChange, activeFilter }: WorkFi
     </span>
 
     {/* Category Count: ektu chhoto size */}
-    <span className="text-[10px] text-black">
+    <span className="text-[10px] text-forground">
       [{activeCategory?.count}]
     </span>
     
