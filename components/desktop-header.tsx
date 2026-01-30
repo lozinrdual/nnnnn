@@ -132,8 +132,8 @@ export function DesktopHeader() {
       `}</style>
       <div className="w-full md:px-0 lg:px-8 py-2.4">
         <div className="flex items-center justify-between gap-14">
-          <Link href="/" className="flex items-center justify-center gap-4 flex-shrink-0">
-            <div className="w-48 h-12 flex items-center justify-center">
+          <Link href="/" className="flex items-center gap-4 flex-shrink-0">
+            <div className="w-48 h-12 flex items-center">
               <DesktopHeaderSVG />
             </div>
           </Link>
