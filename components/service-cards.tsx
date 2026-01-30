@@ -264,11 +264,11 @@ export function ServiceCards() {
               {/* CTA Link with Border Animation */}
               <Link
                 href="/services"
-                className="cta-link group relative mt-6 inline-flex items-center gap-2 bg-transparent text-black px-4 py-2 transition-all duration-700 hover:bg-black/15"
+                className="cta-link group relative mt-6 inline-flex items-center gap-2 bg-transparent text-foreground px-4 py-2 transition-all duration-700 hover:bg-foreground/15"
               >
                 <span className="font-medium text-sm">Learn More</span>
                 <svg
-                  className="w-4 h-4 text-black group-hover:-rotate-[30deg] transition-transform duration-300"
+                  className="w-4 h-4 text-foreground group-hover:-rotate-[30deg] transition-transform duration-300"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
