@@ -137,7 +137,7 @@ export function Hero() {
           initial="hidden"
           animate="visible"
         >
-          <h1 className="text-[42px] md:text-[80px] lg:text-[120px] xl:text-[160px] 2xl:text-[196px] font-medium text-black leading-[0.9] sm:leading-[0.85] md:leading-[0.8] tracking-tighter text-left sm:text-left w-full break-words">
+          <h1 className="text-[42px] md:text-[80px] lg:text-[120px] xl:text-[160px] 2xl:text-[196px] font-medium text-foreground leading-[0.9] sm:leading-[0.85] md:leading-[0.8] tracking-tighter text-left sm:text-left w-full break-words">
             <motion.span className="hero-line" variants={lineVariants}>
               Brands,
             </motion.span>
