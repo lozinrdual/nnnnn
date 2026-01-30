@@ -53,7 +53,7 @@ export function ThemeToggle() {
       ref={buttonRef}
       onClick={handleThemeToggle}
       disabled={isAnimating}
-      className="fixed bottom-5 right-5 z-50 group"
+      className="fixed bottom-5 right-5 z-50 group hidden md:hidden"
       style={{ zIndex: 10000 }}
       aria-label="Toggle theme"
     >
