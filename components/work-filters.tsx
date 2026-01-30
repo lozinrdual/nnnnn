@@ -57,7 +57,7 @@ export function WorkFilters({ categories, onFilterChange, activeFilter }: WorkFi
         <div className="relative">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`w-full px-4 py-4 rounded-lg border border-black-5/20 bg-transparent hover:bg-black-5/7 text-black-5 flex items-center justify-between transition-all duration-500 overflow-hidden relative group ${
+            className={`w-full px-4 py-4 rounded-lg border border-forground/20 bg-transparent hover:bg-black-5/7 text-black-5 flex items-center justify-between transition-all duration-500 overflow-hidden relative group ${
               isOpen ? "ring-2 ring-black-5/20 border-black-5/40" : ""
             }`}
           >
