@@ -91,18 +91,18 @@ export function ServicesSection() {
         >
           <Link
             href="/services"
-            className="group relative inline-flex w-full max-w-md items-center border-t border-black justify-between gap-4 hover:bg-black/10 px-0 py-3 text-black tracking-tighter font-medium text-lg transition-all duration-300 "
+            className="group relative inline-flex w-full max-w-md items-center border-t border-black justify-between gap-4 hover:bg-black/10 px-0 py-3 text-foreground tracking-tighter font-medium text-lg transition-all duration-300 "
           >
             <span>Learn More</span>
             <svg
-  className="w-6.5 h-6.5 text-white transition-transform duration-500 group-hover:-rotate-[30deg]"
+  className="w-6.5 h-6.5 text-foreground transition-transform duration-500 group-hover:-rotate-[30deg]"
   fill="none"
   stroke="currentColor"
   viewBox="0 0 24 24"
 >
   <path
     d="M4 12H6.5M20 12L14 6M20 12L14 18M20 12H9.5"
-    stroke="#1C274C"
+    stroke="foreground"
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"

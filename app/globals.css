@@ -46,6 +46,47 @@
   --sidebar-ring: #000000;
 }
 
+/* Dark theme styles */
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --text: #ffffff;
+  --card: #1a1a1a;
+  --card-foreground: #ffffff;
+  --popover: #1a1a1a;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --secondary: #ffffff;
+  --secondary-foreground: #000000;
+  --muted: #333333;
+  --muted-foreground: #999999;
+  --accent: #ffffff;
+  --accent-foreground: #000000;
+  --destructive: #ff6633;
+  --destructive-foreground: #000000;
+  --border: #333333;
+  --input: #1a1a1a;
+  --ring: #ffffff;
+  --cta: #FF3C00;
+  --secondary-cta: #1a2940;
+  --secondary-cta-hover: #2a3a50;
+  --secondary-text: #ff6633;
+  --chart-1: #ffffff;
+  --chart-2: #ffffff;
+  --chart-3: #ffffff;
+  --chart-4: #ffffff;
+  --chart-5: #e6e6e6;
+  --sidebar: #000000;
+  --sidebar-foreground: #ff6633;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #e0e0e0;
+  --sidebar-border: #333333;
+  --sidebar-ring: #ffffff;
+}
+
 @theme inline {
   /* Updated to use Aspecta font family for all text */
   --font-sans: "Aspecta", system-ui, -apple-system, sans-serif;
@@ -600,5 +641,41 @@
   to {
     clip-path: inset(0% 0 0 0);
     transform: translateY(0);
+  }
+}
+
+/* Theme sweep animation - bottom to top */
+.theme-sweep {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  transform: translateY(100%);
+}
+
+.sweep-to-dark {
+  background: #000000;
+}
+
+.sweep-to-light {
+  background: #ffffff;
+}
+
+.theme-sweep-active {
+  animation: sweepFromBottom 600ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes sweepFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(0%);
   }
 }
