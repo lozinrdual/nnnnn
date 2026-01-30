@@ -4,61 +4,14 @@ export function HeroCTASection() {
       <style>{`
         .cta-buttoon {
           position: relative;
-          overflow: hidden;
           background: transparent;
-          color: background;
+          color: black;
           padding: 12px 3px;
           z-index: 1;
         }
 
-        .cta-buttoon::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          width: 0;
-          background: background;
-          transition: width 0.4s cubic-bezier(0.33, 0, 0.2, 1);
-          z-index: -1;
-        }
-
-        .cta-buttoon::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: foreground;
-          opacity: 0;
-          z-index: -1;
-        }
-
-        .cta-buttoon:hover::before {
-          width: 100%;
-        }
-
-        @keyframes shimmerWave {
-          0% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          50% {
-            opacity: 1;
-          }
-          100% {
-            transform: translateX(100%);
-            opacity: 0;
-          }
-        }
-
-        .cta-buttoon:hover::after {
-          animation: shimmerWave 0.6s ease-in-out;
-        }
-
         .cta-buttoon:hover {
-          color: foreground;
+          color: black;
         }
 
         .cta-text-wrapper {
