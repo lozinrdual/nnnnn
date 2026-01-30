@@ -20,45 +20,32 @@ export function ThemeToggle() {
   const handleThemeToggle = () => {
     if (isAnimating) return
 
-    // Get button position for dual-wave animation
-    if (buttonRef.current) {
-      const rect = buttonRef.current.getBoundingClientRect()
-      const centerX = rect.left + rect.width / 2
-      const centerY = rect.top + rect.height / 2
+    setIsAnimating(true)
 
-      const wave1 = document.createElement("div")
-      wave1.className = "theme-wave-1"
-      wave1.style.left = `${centerX}px`
-      wave1.style.top = `${centerY}px`
+    // Create full-screen sweep animation from bottom to top
+    const sweep = document.createElement("div")
+    sweep.className = `theme-sweep ${isDark ? "sweep-to-light" : "sweep-to-dark"}`
+    console.log("[v0] Theme toggle initiated, current theme:", isDark ? "dark" : "light")
+    document.body.appendChild(sweep)
 
-      const wave2 = document.createElement("div")
-      wave2.className = "theme-wave-2"
-      wave2.style.left = `${centerX}px`
-      wave2.style.top = `${centerY}px`
+    // Trigger animation
+    setTimeout(() => {
+      sweep.classList.add("theme-sweep-active")
+      console.log("[v0] Animation started")
+    }, 10)
 
-      document.body.appendChild(wave1)
-      document.body.appendChild(wave2)
+    // Theme switches when animation is half-way through
+    setTimeout(() => {
+      console.log("[v0] Switching theme to:", isDark ? "light" : "dark")
+      setTheme(isDark ? "light" : "dark")
+    }, 300)
 
-      setIsAnimating(true)
-
-      // Trigger animations immediately
-      setTimeout(() => {
-        wave1.classList.add("theme-wave-1-active")
-        wave2.classList.add("theme-wave-2-active")
-      }, 10)
-
-      // Theme switches when wave 2 fully covers screen (~400ms)
-      setTimeout(() => {
-        setTheme(isDark ? "light" : "dark")
-      }, 400)
-
-      // Cleanup after total animation completes
-      setTimeout(() => {
-        wave1.remove()
-        wave2.remove()
-        setIsAnimating(false)
-      }, 700)
-    }
+    // Cleanup after animation completes
+    setTimeout(() => {
+      sweep.remove()
+      setIsAnimating(false)
+      console.log("[v0] Animation completed")
+    }, 600)
   }
 
   return (
@@ -66,7 +53,8 @@ export function ThemeToggle() {
       ref={buttonRef}
       onClick={handleThemeToggle}
       disabled={isAnimating}
-      className="fixed bottom-5 right-5 z-40 group"
+      className="fixed bottom-5 right-5 z-50 group"
+      style={{ zIndex: 10000 }}
       aria-label="Toggle theme"
     >
       {/* Main toggle circle */}
