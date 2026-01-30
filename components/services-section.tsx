@@ -95,7 +95,7 @@ export function ServicesSection() {
           >
             <span>Learn More</span>
             <svg
-  className="w-6.5 h-6.5 text-white transition-transform duration-500 group-hover:-rotate-[30deg]"
+  className="w-6.5 h-6.5 text-foreground transition-transform duration-500 group-hover:-rotate-[30deg]"
   fill="none"
   stroke="currentColor"
   viewBox="0 0 24 24"
