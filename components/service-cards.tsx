@@ -289,7 +289,7 @@ export function ServiceCards() {
               </h3>
 
               {/* Description */}
-              <p className="text-sm md:text-base lg:text-[16px] text-foreground/60 leading-normal flex-grow transition-colors duration-300">
+              <p className="text-sm md:text-base lg:text-[16px] text-foreground/50 leading-normal flex-grow transition-colors duration-300">
                 {service.description}
               </p>
 
