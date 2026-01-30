@@ -91,7 +91,7 @@ export function ServicesSection() {
         >
           <Link
             href="/services"
-            className="group relative inline-flex w-full max-w-md items-center border-t border-black justify-between gap-4 hover:bg-black/10 px-0 py-3 text-black tracking-tighter font-medium text-lg transition-all duration-300 "
+            className="group relative inline-flex w-full max-w-md items-center border-t border-black justify-between gap-4 hover:bg-black/10 px-0 py-3 text-foreground tracking-tighter font-medium text-lg transition-all duration-300 "
           >
             <span>Learn More</span>
             <svg
