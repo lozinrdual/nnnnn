@@ -6,7 +6,7 @@ export function HeroCTASection() {
           position: relative;
           overflow: hidden;
           background: transparent;
-          color: background;
+          color: foreground;
           padding: 12px 3px;
           z-index: 1;
         }
