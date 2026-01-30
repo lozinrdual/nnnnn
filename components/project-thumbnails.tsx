@@ -31,6 +31,19 @@ const projects: Project[] = [
     bgColor: "bg-[#FF3C00]",
     textColor: "text-white",
   },
+  {
+    id: "1",
+    title: "Lozinr",
+    category: "Design Agency",
+    industry: "DESIGN",
+    image: "https://j918kna7hvf0qlsi.public.blob.vercel-storage.com/Frame%202.jpg",
+    slug: "lozinr",
+    tags: ["Agency", "Branding", "Creative"],
+    year: "2025",
+    services: "Brand Identity",
+    bgColor: "bg-[#FF3C00]",
+    textColor: "text-white",
+  },
   
 ]
 
@@ -90,8 +103,8 @@ export function ProjectThumbnails() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.5rem;
+          height: 2.5rem;
           border-radius: 9999px;
           background: white;
           color: black;
@@ -99,10 +112,24 @@ export function ProjectThumbnails() {
           transform: rotate(-30deg);
         }
 
+        @media (min-width: 768px) {
+          .arrow-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+          }
+        }
+
         .arrow-svg {
-          width: 2.5rem;
-          height: 2.5rem;
+          width: 1.75rem;
+          height: 1.75rem;
           transition: transform 0.5s cubic-bezier(0.33, 0, 0.2, 1);
+        }
+
+        @media (min-width: 768px) {
+          .arrow-svg {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
         }
 
         .project-card {
@@ -149,10 +176,10 @@ export function ProjectThumbnails() {
                 {/* Title Section */}
                 <div className={`${project.bgColor} ${project.textColor} p-2 sm:p-8 md:p-3 px-3 md:px-5 lg:px-8 w-full`}>
                   {/* Top Row: Year, Category, Services */}
-                  <div className="grid grid-cols-3 gap-4 mb-15 sm:mb-23 text-[12px] md:text-[14px] lg:text-[16px] font-medium tracking-tight uppercase">
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-15 sm:mb-23 text-[12px] md:text-[14px] lg:text-[16px] font-medium tracking-tight uppercase">
                     <div className="text-left">{project.year}</div>
                     <div className="hidden md:block text-center">{project.category}</div>
-                    <div className="text-right">{project.services}</div>
+                    <div className="text-right col-span-1">{project.services}</div>
                   </div>
 
                   {/* Bottom Row: Title and Arrow */}

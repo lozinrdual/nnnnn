@@ -130,18 +130,18 @@ export function DesktopHeader() {
           color: white;
         }
       `}</style>
-      <div className="w-full md:px-0 lg:px-8 py-2.5">
-        <div className="flex items-start justify-between gap-8">
+      <div className="w-full md:px-0 lg:px-8 py-2.4">
+        <div className="flex items-center justify-between gap-14">
           <Link href="/" className="flex items-center gap-4 flex-shrink-0">
-            <div className="w-48 h-12">
+            <div className="w-48 h-12 flex items-center">
               <DesktopHeaderSVG />
             </div>
           </Link>
 
           <div className="text-[14px] font-medium text-black">Branding Studio</div>
 
-          <nav className="flex gap-5">
-            <div className="flex flex-col gap-0.7 leading-none">
+          <nav className="flex gap-40 items-center">
+            <div className="flex gap-4 leading-none">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -152,21 +152,21 @@ export function DesktopHeader() {
                 </Link>
               ))}
             </div>
-          </nav>
 
-          <div className="flex flex-col gap-2 leading-none">
-            {socialLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="header-social-link text-[14px] font-medium text-black"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+            <div className="flex gap-4 leading-none">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="header-social-link text-[14px] font-medium text-black"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </nav>
 
           <Link
             href="/contact"

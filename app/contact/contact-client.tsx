@@ -10,8 +10,6 @@ export default function ContactClient() {
       <WorkHeader
         title="Contact Us"
         showFilters={false}
-        tagline="Let's create something bold together. Reach out to discuss your design and branding vision."
-        location="Latitude: 23.4607° N  Longitude: 91.1809° E"
       />
       <div className="relative z-10 bg-background">
         <ContactForm />
