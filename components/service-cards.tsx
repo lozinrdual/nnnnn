@@ -187,6 +187,7 @@ export function ServiceCards() {
         animation: borderLeftToRight 0.4s ease-out forwards;
       }
 
+      /* Light theme hover styles */
       .service-card:hover {
         --tw-bg-opacity: 1;
       }
@@ -219,6 +220,37 @@ export function ServiceCards() {
       .service-card:hover .cta-link:hover {
         background-color: rgb(255 255 255 / 0.1);
       }
+
+      /* Dark theme hover styles */
+      .dark .service-card:hover .service-card-inner {
+        background-color: rgb(255 255 255);
+      }
+
+      .dark .service-card:hover h3,
+      .dark .service-card:hover p {
+        color: rgb(0 0 0);
+      }
+
+      .dark .service-card:hover .icon-badge {
+        background-color: rgb(0 0 0 / 0.1);
+      }
+
+      .dark .service-card:hover .icon-badge svg {
+        color: rgb(0 0 0);
+      }
+
+      .dark .service-card:hover .cta-link {
+        color: rgb(0 0 0);
+      }
+
+      .dark .service-card:hover .cta-link svg {
+        color: rgb(0 0 0);
+        stroke: rgb(0 0 0);
+      }
+
+      .dark .service-card:hover .cta-link:hover {
+        background-color: rgb(0 0 0 / 0.1);
+      }
     `
     document.head.appendChild(style)
     return () => {
@@ -240,7 +272,7 @@ export function ServiceCards() {
               animationDelay: `${index * 0.12}s`,
             }}
           >
-            <div className="service-card-inner h-full bg-background/1 border border-border/50 rounded-3xl p-8 md:p-9 flex flex-col hover:border-border/80 transition-all duration-300">
+            <div className="service-card-inner h-full bg-black/1 border border-border/50 rounded-3xl p-8 md:p-9 flex flex-col hover:border-border/80 transition-all duration-300">
               {/* Service Number */}
               
 
@@ -252,7 +284,7 @@ export function ServiceCards() {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl md:text-lg lg:text-[30px] font-regular text-foreground leading-[1.2] mb-4 tracking-tighter transition-colors duration-300">
+              <h3 className="text-xl md:text-lg lg:text-[30px] font-regular text-black leading-[1.2] mb-4 tracking-tighter transition-colors duration-300">
                 {service.title}
               </h3>
 
@@ -264,11 +296,11 @@ export function ServiceCards() {
               {/* CTA Link with Border Animation */}
               <Link
                 href="/services"
-                className="cta-link group relative mt-6 inline-flex items-center gap-2 bg-transparent text-foreground px-4 py-2 transition-all duration-700 hover:bg-foreground/15"
+                className="cta-link group relative mt-6 inline-flex items-center gap-2 bg-transparent text-black px-4 py-2 transition-all duration-700 hover:bg-black/15"
               >
                 <span className="font-medium text-sm">Learn More</span>
                 <svg
-                  className="w-4 h-4 text-foreground group-hover:-rotate-[30deg] transition-transform duration-300"
+                  className="w-4 h-4 text-black group-hover:-rotate-[30deg] transition-transform duration-300"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
