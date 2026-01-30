@@ -284,7 +284,7 @@ export function ServiceCards() {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl md:text-lg lg:text-[30px] font-regular text-black leading-[1.2] mb-4 tracking-tighter transition-colors duration-300">
+              <h3 className="text-xl md:text-lg lg:text-[30px] font-regular text-forground leading-[1.2] mb-4 tracking-tighter transition-colors duration-300">
                 {service.title}
               </h3>
 
