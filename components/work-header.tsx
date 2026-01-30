@@ -73,7 +73,7 @@ export function WorkHeader({
   }
 
   return (
-    <div className="sticky top-0 z-0 bg-white text-forground font-sans pt-20 md:pt-35 lg:pt-40 pb-4 px-3 md:px-5 lg:px-8">
+    <div className="sticky top-0 z-0 bg-background text-forground font-sans pt-20 md:pt-35 lg:pt-40 pb-4 px-3 md:px-5 lg:px-8">
       <div className="max-w-full mx-auto">
         <div className="mb-1 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 items-start">
           <h1
