@@ -91,7 +91,12 @@ export const viewport: Viewport = {
   minimumScale: 1,
   maximumScale: 5,
   userScalable: true,
+  colorScheme: "light",
+  themeColor: "#ffffff",
 }
+
+// Enable streaming for faster first byte
+export const revalidate = 3600 // Cache for 1 hour
 
 export default function RootLayout({
   children,
