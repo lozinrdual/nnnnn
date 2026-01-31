@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 interface Project {
   id: string
@@ -162,14 +163,15 @@ export function ProjectThumbnails() {
                 }}
               >
                 {/* Image Container - 9:16 ratio on mobile, full screen on desktop */}
-                <div className="w-full
-    h-[590px] overflow-hidden bg-gray-200
-                lg:w-full lg:h-[590px] lg:aspect-auto">
-                  <img
-                    src={project.image || "/placeholder.svg"}
+                <div className="relative w-full h-[590px] overflow-hidden bg-gray-200">
+                  <Image
+                    src={project.image || "/placeholder.jpg"}
                     alt={project.title}
+                    fill
                     loading="lazy"
-                    className="w-full h-full object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+                    className="object-cover"
+                    priority={index === 0}
                   />
                 </div>
 
