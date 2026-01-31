@@ -16,8 +16,8 @@ export function DesktopHeader() {
   ]
 
   const socialLinks = [
-    { href: "https://instagram.com/adnan.akif.creator", label: "Instagram" },
-    { href: "https://facebook.com/adnan.akif.creator", label: "Facebook" },
+    { href: "https://instagram.com/adnanbranding", label: "Instagram" },
+    { href: "https://facebook.com/adnanbranding", label: "Facebook" },
   ]
 
   const isActive = (href: string) => {
