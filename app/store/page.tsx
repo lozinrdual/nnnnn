@@ -23,15 +23,13 @@ interface Product {
 const products: Product[] = [
   {
     id: 0,
-    name: "Brand Guidelines Template",
-    description: "Professional brand guidelines template ready to customize and use",
-    price: "$99",
-    priceNumber: 99,
-    image: "https://rm9cehwjzivcimqc.public.blob.vercel-storage.com/ddsf.avif",
-    features: ["Ready to Use", "Fully Editable", "Professional Design", "Quick Setup"],
-    category: "starter",
-    deliveryTime: "Instant",
-    paymentLink: "https://adnanakif.gumroad.com/l/brandguidelinestamplate",
+    name: "3 illustrator scripts",
+    description: "01 Grid Place script, 02 Bazier Outliner, 03 Bento Box Creator",
+    price: "$0.99",
+    priceNumber: 0.99,
+    image: "https://btuo8ppwedfbtxi6.public.blob.vercel-storage.com/5z128todn75bcj664fv6wc019bn7.jpg",
+    features: ["Ready to Use", "Professional Design"],
+    paymentLink: "https://adnanbranding.gumroad.com/l/allscripts?wanted=true",
     profileImage: "https://qms1staoyjyffvwr.public.blob.vercel-storage.com/Adnan.jpg",
     rating: 5.0,
   },
@@ -39,91 +37,23 @@ const products: Product[] = [
     id: 1,
     name: "Logo Design Package",
     description: "Perfect for startups and small businesses needing a professional brand mark",
-    price: "Free",
-    priceNumber: 0,
-    image: "/professional-logo-design-variations.jpg",
-    features: ["5 Concepts", "Unlimited Revisions", "All Formats", "Source Files"],
-    category: "starter",
-    deliveryTime: "5-7 days",
-    profileImage: "https://qms1staoyjyffvwr.public.blob.vercel-storage.com/Adnan.jpg",
+    price: "$0.99",
+    priceNumber: 0.99,
+    image: "https://btuo8ppwedfbtxi6.public.blob.vercel-storage.com/GridPlace.jpg",
+    paymentLink: "https://adnanbranding.gumroad.com/l/gridplace?wanted=true",
     rating: 5.0,
   },
-  {
-    id: 2,
-    name: "Social Media Kit",
-    description: "Professionally designed templates for all social media platforms",
-    price: "$299",
-    priceNumber: 299,
-    image: "/social-media-kit-templates.jpg",
-    features: ["Templates", "Brand Consistency", "Ready to Use", "Editable Files"],
-    category: "starter",
-    deliveryTime: "3-5 days",
-    profileImage: "https://qms1staoyjyffvwr.public.blob.vercel-storage.com/Adnan.jpg",
-    rating: 5.0,
-  },
-  {
-    id: 3,
-    name: "Brand Identity Kit",
-    description: "Complete branding package with everything you need for brand consistency",
-    price: "$599",
-    priceNumber: 599,
-    image: "/brand-identity-design-system.png",
-    features: ["Logo Design", "Color Palette", "Typography", "Brand Guidelines"],
-    category: "professional",
-    popular: true,
-    deliveryTime: "10-14 days",
-    profileImage: "https://qms1staoyjyffvwr.public.blob.vercel-storage.com/Adnan.jpg",
-    rating: 5.0,
-  },
-  {
-    id: 4,
-    name: "Website Branding",
-    description: "Complete web design system with UI kit and brand application guidelines",
-    price: "$899",
-    priceNumber: 899,
-    image: "/website-design-brand-guidelines.jpg",
-    features: ["UI Kit", "Web Design", "Brand Guidelines", "Asset Pack"],
-    category: "professional",
-    deliveryTime: "14-21 days",
-    profileImage: "https://qms1staoyjyffvwr.public.blob.vercel-storage.com/Adnan.jpg",
-    rating: 5.0,
-  },
-  {
-    id: 5,
-    name: "Packaging Design",
-    description: "Premium packaging design for physical products with mockups",
-    price: "$699",
-    priceNumber: 699,
-    image: "/packaging-design-mockup.jpg",
-    features: ["Package Design", "Mockups", "Specifications", "Print Ready"],
-    category: "professional",
-    deliveryTime: "10-14 days",
-    profileImage: "https://qms1staoyjyffvwr.public.blob.vercel-storage.com/Adnan.jpg",
-    rating: 5.0,
-  },
-  {
-    id: 6,
-    name: "Brand Strategy",
-    description: "Comprehensive brand strategy consultation and complete documentation",
-    price: "$1,299",
-    priceNumber: 1299,
-    image: "/brand-strategy-consultation.jpg",
-    features: ["Strategy Session", "Market Research", "Brand Positioning", "Documentation"],
-    category: "enterprise",
-    deliveryTime: "21-30 days",
-    profileImage: "https://qms1staoyjyffvwr.public.blob.vercel-storage.com/Adnan.jpg",
-    rating: 5.0,
-  },
+  
 ]
 
 function ProductCard({ product }: { product: Product }) {
-  const whopLink = "https://whop.com/adnanakif"
-
   const handleViewDetails = () => {
-    window.open(whopLink, "_blank")
+    if (product.paymentLink) {
+      window.open(product.paymentLink, "_blank")
+    }
   }
 
-  const purchaseText = "Purchase"
+  const purchaseText = "Unlock Your Glow"
   const letters = purchaseText.split("")
 
   return (
