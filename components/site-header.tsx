@@ -180,7 +180,7 @@ export function SiteHeader() {
               }}
             >
               <a
-                href="https://instagram.com/adnanbranding"
+                href="https://instagram.com/adnan.akif.creator"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-[16px] font-medium tracking-tight"
@@ -188,7 +188,7 @@ export function SiteHeader() {
                 Instagram
               </a>
               <a
-                href="https://facebook.com/adnanbranding"
+                href="https://facebook.com/adnan.akif.creator"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-[16px] font-medium tracking-tight"
