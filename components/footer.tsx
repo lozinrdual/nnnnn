@@ -371,10 +371,10 @@ export function Footer() {
             {/* Social Links */}
             <div className="flex flex-col">
               <div className="flex flex-col gap-2" style={{ color: "#f9f9f9" }}>
-                <AnimatedLinkMobile href="https://x.com/adnandzinr">TWITTER</AnimatedLinkMobile>
+                <AnimatedLinkMobile href="https://x.com/adnan.akif.creator">TWITTER</AnimatedLinkMobile>
                 <AnimatedLinkMobile href="#">LINKEDIN</AnimatedLinkMobile>
-                <AnimatedLinkMobile href="https://web.facebook.com/brandzinr">FACEBOOK</AnimatedLinkMobile>
-                <AnimatedLinkMobile href="https://www.instagram.com/adnanakifdesign/">INSTAGRAM</AnimatedLinkMobile>
+                <AnimatedLinkMobile href="https://web.facebook.com/adnan.akif.creator">FACEBOOK</AnimatedLinkMobile>
+                <AnimatedLinkMobile href="https://www.instagram.com/adnan.akif.creator/">INSTAGRAM</AnimatedLinkMobile>
               </div>
               <div className="mt-18 flex flex-col gap-1" style={{ color: "#f9f9f9" }}>
                 <NavLinkMobile href="/terms">Terms & Conditions</NavLinkMobile>
@@ -425,10 +425,10 @@ export function Footer() {
               {/* Social Links */}
               <div className="flex flex-col lg:mt-3">
                 <div className="flex flex-col gap-2" style={{ color: "#f9f9f9" }}>
-                  <AnimatedLink href="https://www.instagram.com/adnanakifdesign/">INSTAGRAM</AnimatedLink>
+                  <AnimatedLink href="https://www.instagram.com/adnan.akif.creator/">INSTAGRAM</AnimatedLink>
                   <AnimatedLink href="#">LINKEDIN</AnimatedLink>
-                  <AnimatedLink href="https://web.facebook.com/brandzinr">FACEBOOK</AnimatedLink>
-                  <AnimatedLink href="https://x.com/adnandzinr">TWITTER</AnimatedLink>
+                  <AnimatedLink href="https://web.facebook.com/adnan.akif.creator">FACEBOOK</AnimatedLink>
+                  <AnimatedLink href="https://x.com/adnan.akif.creator">TWITTER</AnimatedLink>
                   <AnimatedLink href="mailto:adnanakif.co@email.com">EMAIL</AnimatedLink>
                 </div>
                 <div className="mt-12 flex flex-col gap-1" style={{ color: "#f9f9f9" }}>
